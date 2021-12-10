@@ -39,7 +39,9 @@ window.addEventListener('load', () => {
 		task_actions_el.appendChild(task_delete_el);
 
 		task_el.appendChild(task_actions_el);
+
 		list_el.appendChild(task_el);
+
 		input.value = '';
 
 		task_edit_el.addEventListener('click', (e) => {
@@ -52,6 +54,7 @@ window.addEventListener('load', () => {
 				task_input_el.setAttribute("readonly", "readonly");
 			}
 		});
+
 		task_delete_el.addEventListener('click', (e) => {
 			list_el.removeChild(task_el);
 		});
